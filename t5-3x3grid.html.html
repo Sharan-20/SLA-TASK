@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container{                                                                                             
+            display: grid;
+            grid-template-columns:repeat(3,100px);
+            gap: 10px;
+            grid-template-rows:repeat(3,100px);   
+            padding: 30px;  
+            justify-content: center;       
+            
+        }
+        .box{
+            padding: 1em;
+            background-color: green;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            
+        }
+        h1{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>3X3 GRID</h1>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

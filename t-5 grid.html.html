@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 50%;
+            grid-template-rows: 10vh 20vh 30vh 10vh;
+            gap: 5px; 
+            grid-template-areas: 
+            "h h h"
+            "sd con1 con1"
+            "sd con2 con3"
+            "f f f"
+            ;         
+
+        }
+        .one,.two,.three,.four,.five,.six{
+            background-color: blueviolet;
+            border: 3px solid black;
+            text-transform: uppercase;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+            font-weight: bold;
+        }
+        .one{
+            grid-area: h;
+        }
+        .two{
+            grid-area: sd;
+        }
+        .three{
+            grid-area: con1;
+        }
+        .four{
+            grid-area: con2;
+        }
+        .five{
+            grid-area: con3;
+        }
+        .six{
+            grid-area:f;
+        }
+    </style>
+</head>
+<body>
+    <h1>new style of grid</h1>
+    <div class="container">
+        <div class="one">header</div>
+        <div class="two">sidebar</div>
+        <div class="three">con1</div>
+        <div class="four">con2</div>
+        <div class="five">con3</div>
+        <div class="six">footer</div>
+    </div>
+
+</body>
+</html>
