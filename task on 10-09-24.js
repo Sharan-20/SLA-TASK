@@ -68,7 +68,9 @@ var employee=[
 
 ];
 
-console.log(employee);
+console.log(employee[0].empid);
+console.log(employee[1].empname);
+console.log(employee[2].empdesignation);
 
 
 
